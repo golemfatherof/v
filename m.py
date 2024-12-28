@@ -4,10 +4,10 @@ import asyncio
 from datetime import datetime, timedelta
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('8018797794:AAEdFriqrYmOrKotJrJhxtTaZhka9WHAAhk')
+bot = telebot.TeleBot('7785979676:AAFo6mw4AVFdy56Bgz3onxu0e360A3_LACo')
 
 # Admin user IDs
-ADMIN_IDS = ["7584228621"]
+ADMIN_IDS = ["7584228621,1724246173"]
 
 # Database setup
 DB_FILE = "bot_data.db"
@@ -142,7 +142,7 @@ def handle_reset_attacks(message):
 
 @bot.message_handler(commands=['start'])
 def welcome_message(message):
-    bot.reply_to(message, "❄️ Welcome to the Premium DDoS Bot. Use to view available commands 𝙔𝙊𝙐𝙍 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 /start\n/resetattacks\n/attack\n/add\n\n𝘿𝙈 -@GOLEM_OWNER 𝙏𝙊 𝘽𝙐𝙔 𝙋𝘼𝙄𝘿 𝘿𝘿𝙊𝙎 𝘼𝙇𝙇 𝘼𝙏𝙏𝘼𝘾𝙆 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 ✅\n MAKE SURE RESETATTACKS AFTER 10 ATTACK ")
+    bot.reply_to(message, "❄️ Welcome to the Premium DDoS Bot. Use to view available commands 𝙔𝙊𝙐𝙍 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 /start\n/resetattacks\n/attack\n/add\n\n𝘿𝙈 -@ADMIN  𝙏𝙊 𝘽𝙐𝙔 𝙋𝘼𝙄𝘿 𝘿𝘿𝙊𝙎 𝘼𝙇𝙇 𝘼𝙏𝙏𝘼𝘾𝙆 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 ✅\n MAKE SURE RESETATTACKS AFTER 10 ATTACK ")
 
 # Start the bot
 while True:
